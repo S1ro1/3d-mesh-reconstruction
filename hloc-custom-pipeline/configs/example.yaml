@@ -1,0 +1,11 @@
+image_dir: data/poster-dataset/images
+base_output_dir: data/poster-dataset/outputs
+use_exhaustive: True
+
+visualize: True
+force_overwrite: False
+
+retrieval_conf: netvlad
+feature_conf: superpoint_inloc
+matcher_conf: superglue
+
