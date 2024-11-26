@@ -28,10 +28,10 @@ def run_pipeline(config: InputArguments):
     _sfm_dir = output_dir / "sfm"
     _sfm_pairs = _sfm_dir / "pairs.txt"
 
-    os.makedirs(_sfm_dir, exist_ok=True)
-
     if config.force_overwrite:
         shutil.rmtree(output_dir, ignore_errors=True)
+
+    os.makedirs(_sfm_dir, exist_ok=True)
 
     # feature retrieval
     extract_features.main(config.retrieval_conf, image_dir, output_dir)

@@ -3,7 +3,7 @@ base_output_dir: data/poster-dataset/outputs
 use_exhaustive: True
 
 visualize: True
-force_overwrite: False
+force_overwrite: True
 
 retrieval_conf: netvlad
 feature_conf: superpoint_inloc
